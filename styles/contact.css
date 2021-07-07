@@ -1,0 +1,145 @@
+/* Global variables */
+:root {
+    --primary-bg-color: #F5F5F5;
+    --secondary-bg-color: #6A7B8B; 
+    --secondary-bg-2-color: #5C5B5B; 
+    --secondary-text-color: #F1F3F5; 
+    --form-background: #C5CACF;
+    --font-family: 'Avenir Next', 'Montserrat', sans-serif;
+}
+
+/* Body styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    width: 100%;
+    background-color: var(--primary-bg-color);
+    margin: 0;
+    color: var(--secondary-bg-2-color);
+}
+
+/* Main logo */
+main img {
+    width: 15%;
+}
+
+main div {
+    text-align: center;
+}
+
+/* h2 */
+section h2 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 2.35rem;
+}
+
+section p {
+    text-align: left;
+}
+
+/* Main contact section */
+/* -- Main contact - Form */
+form input {
+    width: 100%;
+    font-size: 1.25rem;
+    padding: 2%;
+    
+}
+
+.form-section {
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.form-section input, textarea {
+    border: none;
+    background-color: var(--form-background);
+    color: var(--primary-bg-color);
+    font-family: var(--font-family);
+}
+
+.form-section input:focus, textarea:focus {
+    outline-color: var(--secondary-bg-color);
+}
+
+textarea::placeholder {
+    color: var(--primary-bg-color);
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 2%;
+    text-align: left;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    padding: 2%;
+    font-size: 1.25rem;
+}
+
+.form-btn {
+    background-color: var(--secondary-bg-color);
+    font-family: var(--font-family);
+    font-weight: bold;
+    color: var(--primary-bg-color);
+    border: none;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.contact-main {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.contact-main section p {
+    margin: 10% 0;
+}
+
+.contact-main section span {
+    font-size: 1.25rem;
+}
+
+.contact-main img {
+    width: 100%;
+}
+
+.contact-main section:last-child {
+    margin: 5% 0;
+}
+
+/* Media queries */
+@media (max-width: 700px) {
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-main section span {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 481px) {
+    .contact-main section span {
+        font-size: 1rem;
+    }
+    
+    form input {
+        font-size: 1rem;
+    }
+
+    textarea::placeholder {
+        font-weight: normal;
+    }
+
+    .form-btn {
+        width: 75%;
+    }
+}

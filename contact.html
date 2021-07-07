@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Coffee - Contact</title>
+    <meta name="description" content="Mr Coffee is a cafe in Paris, France serving fair trade coffee">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/header_footer.css" media="screen">
+    <link rel="stylesheet" href="./styles/contact.css" media="screen">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Mr Coffee is a cafe in Paris, France serving fair trade coffee">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="mr-coffee.fr/contact">
+    <meta property="og:image" content="./Assets/mr_coffee_salle.jpg">
+    <meta property="og:description" content="The contact page of Mr Coffee, a cafe in Paris, France serving fair trade coffee">
+
+    <!-- Twitter data -->
+    <meta name="twitter:card" value="summary">
+    <meta name="twitter:title" value="Mr Coffee is a cafe in Paris, France serving fair trade coffee">
+</head>
+<body>
+    <header>
+        <div class="head-div">
+            <img src="./Assets/full_logo_white.png" alt="Mr Coffee cafe logo">
+            <nav>
+                <a href="./index.html">Accueil</a>
+                <a href="./about.html">Qui sommes-nous?</a>
+                <a id="nav-selected">Nous contacter</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div>
+            <img src="./Assets/logo_mrcoffee.png" alt="Mr Coffee cafe logo">
+        </div>
+        <div class="contact-main">
+            <section>
+                <h2>Ditnes nous tout!</h2>
+                <form>
+                    <div class="form-section">
+                        <label for="surname">Nom *</label>
+                        <input type="text" name="surname" id="surname" required>
+                    </div>
+                    <div class="form-section">
+                        <label for="firstname">Prenom *</label>
+                        <input type="text" name="firstname" id="firstname" required>
+                    </div>
+                    <div class="form-section">
+                        <label for="telephone">Téléphone</label>
+                        <input type="text" name="telephone" id="telephone">
+                    </div>
+                    <div class="form-section">
+                        <label for="email">Adresse mail *</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-section">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" placeholder="Tapez votre message ici" rows="5" cols="20" required></textarea>
+                    </div>
+                    <input class="form-btn" type="submit" value="ENVOYER">
+                </form>
+            </section>
+            <section>
+                <h2>On vous attend!</h2>
+                <p><b><span>Mr.Coffee</span></b><br>
+                15 place Jules Guesde<br>
+                75006 Paris<br><br>
+                Tel : +33 9 46 25 78 45<br>
+                Mail : contact@mr-coffee.com</p>
+            </section>
+            <section>
+                <img src="Assets/carte_contact.png" alt="Map showing location of Mr Coffee cafe">
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="foot-div">
+            <img src="./Assets/logo_blanc.png" alt="Mr Coffee cafe logo">
+            <div>
+                <h4>Suivez nous sur les réseaux sociaux !</h4>
+                <div>
+                    <a href="https://www.linkedin.com/"><img src="./Assets/logo_linkedin.png" alt="LinkedIn logo"></a>
+                    <a href="https://twitter.com/"><img src="./Assets/logo_twitter.png" alt="Twitter logo"></a>
+                    <a href="https://www.facebook.com/"><img src="./Assets/logo_facebook.png" alt="Facebook logo"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="form.js"></script>
+</body>
+</html>

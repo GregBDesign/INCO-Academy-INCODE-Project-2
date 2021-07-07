@@ -1,0 +1,245 @@
+/* Global variables */
+:root {
+    --primary-bg-color: #F5F5F5;
+    --secondary-bg-color: #6A7B8B; 
+    --secondary-bg-2-color: #5C5B5B; 
+    --secondary-text-color: #F1F3F5; 
+    --font-family: 'Avenir Next', 'Montserrat', sans-serif;
+}
+
+/* Body styles */
+body {
+    font-family: var(--font-family);
+    width: 100%;
+    background-color: var(--primary-bg-color);
+    margin: 0;
+    color: var(--secondary-bg-2-color)
+}
+
+/* Main logo */
+div img {
+    width: 15%;
+}
+
+/* Hero image */
+main div {
+    text-align: center;
+}
+
+.hero-img {
+    text-align: center;
+    position: relative;
+}
+
+.hero-img img {
+    width: 85%;
+}
+
+.hero-img h1 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.35rem;
+    color: var(--secondary-text-color);
+    text-shadow: 1px 1px 5px rgb(88, 88, 88);
+    text-transform: uppercase;
+}
+
+/* Information cards */
+.cards {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.cards h2 {
+    text-align: center;
+    font-size: 2.35rem;
+    margin: 5%;
+}
+
+.flex-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex-cards div {
+    width: 25%;
+    background-color: var(--secondary-bg-color);
+    opacity: 50%;
+    border-radius: 5px;
+    padding: 3%;
+    color: var(--secondary-text-color);
+    box-shadow: 1px 1px 5px rgb(88, 88, 88);
+}
+
+div form {
+    padding: 5%;
+    text-align: center;
+}
+
+div input {
+    background-color: var(--secondary-bg-color);
+    padding: 1.5%;
+    width: 30%;
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-text-color);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 5px rgb(88, 88, 88);
+}
+
+.flex-cards div img {
+    width: 30%;
+}
+
+.flex-cards h3 {
+    text-shadow: 1px 1px 8px rgb(88, 88, 88);
+}
+
+.flex-cards p {
+    font-weight: bold;
+}
+
+/* Penultimate section */
+main section:last-child h2 {
+    text-align: center;
+    font-size: 2.35rem;
+}
+
+main section:last-child div:first-of-type {
+    text-align: left;
+    margin: 0 10%;
+}
+
+main section:last-child div:first-of-type img {
+    display: inline;
+    width: 6%;
+    vertical-align: bottom;
+}
+
+main section:last-child div:first-of-type h3 {
+    display: inline;
+    margin-left: 3%;
+}
+
+.bottom-div {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.bottom-div div {
+    width: 40%;
+    padding: 2%;
+}
+
+main section:last-child p {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+main section:last-child p:nth-child(5) {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Media queries */
+@media (max-width: 850px) {
+    .hero-img h1 {
+        font-size: 1.5rem;
+    }
+    
+    .cards h2 {
+        font-size: 1.25rem;
+    }
+
+    .cards h3 {
+        font-size: 1.25rem;
+    }
+
+    .cards p {
+        font-size: 1rem;
+    }
+
+    .flex-cards {
+        width: 65%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-cards div {
+        width: 80%;
+        margin-bottom: 5%;
+    }
+
+    div input {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    main section:last-child h2 {
+        font-size: 1.25rem;
+    }
+    
+    main section:last-child div:first-of-type h3 {
+        font-size: 1rem;
+    }
+
+    main section:last-child p {
+        font-size: 1rem;
+    }
+
+    main section:last-child p:nth-child(5) {
+        font-size: 1.25rem;
+    }
+    
+    div input {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 481px) {
+    .hero-img h1 {
+        width: 70%;
+        font-size: 1rem;
+    }
+
+    .cards h2 {
+        font-size: 0.75rem;
+    }
+    
+    .flex-cards div {
+        width: 90%;
+    }
+
+    .flex-cards p {
+        font-weight: normal;
+        font-size: 0.5rem;
+    }
+
+    div input {
+        font-size: 0.5rem;
+    }
+
+    main section:last-child h2 {
+        font-size: 0.75rem;
+    }
+
+    main section:last-child div:first-of-type h3 {
+        font-size: 0.75rem;
+    }
+
+    main section:last-child p {
+        font-size: 0.50rem;
+    }
+
+    main section:last-child p:nth-child(5) {
+        font-size: 0.75rem;
+    }
+}

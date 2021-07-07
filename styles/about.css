@@ -1,0 +1,119 @@
+/* Global variables */
+:root {
+    --primary-bg-color: #F5F5F5;
+    --secondary-bg-color: #6A7B8B; 
+    --secondary-bg-2-color: #5C5B5B; 
+    --secondary-text-color: #F1F3F5; 
+    --font-family: 'Avenir Next', 'Montserrat', sans-serif;
+}
+
+/* Body styles */
+body {
+    font-family: var(--font-family);
+    width: 100%;
+    background-color: var(--primary-bg-color);
+    margin: 0;
+    color: var(--secondary-bg-2-color)
+}
+
+/* Main logo */
+main img {
+    width: 15%;
+}
+
+main div {
+    text-align: center;
+}
+
+/* Body */
+.about-body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.about-body section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3%;
+}
+
+.about-body section p, .about-body section h2 {
+    text-align: left;
+}
+
+.about-body section h2 {
+    font-weight: normal;
+    font-size: 2.35rem;
+}
+
+.about-body section div {
+    width: 45%;
+}
+
+.about-body section div img {
+    width: 75%;
+}
+
+.about-img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-img:first-child {
+    justify-content: flex-start;
+}
+
+main {
+    margin-bottom: 5%;
+}
+
+/* Media queries */
+@media (max-width: 1105px) {
+    .about-body {
+        width: 80%;
+    }
+    .about-body section h2 {
+        font-size: 1.25rem;
+    }
+
+    .about-body section p {
+        font-size: 0.75rem;
+    }
+
+    .about-img img {
+        height: auto;
+        width: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-body {
+        width: 90%;
+    }
+
+    .about-body section {
+        flex-direction: column;
+    }
+
+    .about-body section div {
+        width: 100%;
+    }
+
+    .about-img:nth-child(1) {
+        width: 50%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .about-img:nth-child(1) img {
+        justify-items: center;
+    }
+
+    .about-img:nth-child(2) {
+        display: none;
+    }
+}
