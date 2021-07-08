@@ -39,6 +39,7 @@ section h2 {
 
 section p {
     text-align: left;
+    margin: 5% 0;
 }
 
 /* Main contact section */
@@ -47,7 +48,6 @@ form input {
     width: 100%;
     font-size: 1.25rem;
     padding: 2%;
-    
 }
 
 .form-section {
@@ -66,7 +66,7 @@ form input {
     outline-color: var(--secondary-bg-color);
 }
 
-textarea::placeholder {
+input::placeholder, textarea::placeholder {
     color: var(--primary-bg-color);
     font-weight: bold;
 }
@@ -84,7 +84,7 @@ textarea {
     font-size: 1.25rem;
 }
 
-.form-btn {
+.form-btn, aside button {
     background-color: var(--secondary-bg-color);
     font-family: var(--font-family);
     font-weight: bold;
@@ -94,13 +94,14 @@ textarea {
     border-radius: 10px;
 }
 
+.form-required {
+    color: red;
+}
+
+/* Form end */
 .contact-main {
     margin: 0 auto;
     width: 60%;
-}
-
-.contact-main section p {
-    margin: 10% 0;
 }
 
 .contact-main section span {
@@ -115,7 +116,76 @@ textarea {
     margin: 5% 0;
 }
 
+/* Modal */
+.modal {
+    padding: 3% 0;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    /* min-width: 530px; */
+    height: 50vh;
+    /* min-height: 376px; */
+    margin: 25vh 15vw;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border: solid 1px var(--secondary-bg-2-color);
+}
+
+.modal p {
+    font-weight: bold;
+}
+
+.modal-head {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.modal h2 {
+    text-transform: uppercase;
+}
+
+aside button {
+    width: 20%;
+    height: 15%;
+    box-shadow: 1px 1px 5px rgb(88, 88, 88);
+}
+
+aside img {
+    height: 8vw;
+    width: auto;
+    align-self: center;
+    margin-right: 10%;
+}
+
+/* Modal background */
+#modal-bg {
+    position: fixed;
+    background-color: rgba(92, 91, 91, 0.2);
+    height: 100vh;
+    width: 100vw;
+}
+
 /* Media queries */
+@media (max-width: 730px) {
+    .modal {
+        width: 100vw;
+        margin: 25vh 0;
+    }
+    .modal h2, .modal h3, .modal p {
+        font-size: 1rem;
+    }
+
+    .modal p {
+        font-weight: normal;
+    }
+}
+
 @media (max-width: 700px) {
     section h2 {
         font-size: 1.5rem;
@@ -141,5 +211,11 @@ textarea {
 
     .form-btn {
         width: 75%;
+    }
+}
+
+@media (max-width: 450px) {
+    .modal p {
+        font-size: 0.75rem;
     }
 }
