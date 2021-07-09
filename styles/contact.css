@@ -124,9 +124,9 @@ textarea {
     display: flex;
     flex-direction: column;
     width: 70vw;
-    /* min-width: 530px; */
+    min-width: 530px;
     height: 50vh;
-    /* min-height: 376px; */
+    min-height: 376px;
     margin: 25vh 15vw;
     justify-content: space-around;
     align-items: center;
