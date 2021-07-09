@@ -25,7 +25,7 @@
 </head>
 <body>
     <aside>
-        <div class="modal">
+        <div class="modal hidden">
             <div class="modal-head"> 
                 <img src="Assets/logo_dark.png" alt="Mr Coffee logo">
                 <div>
@@ -34,78 +34,79 @@
                 </div>
             </div>
             <p>Nous essaierons d'y répondre au mieux dans les plus brefs<br>délais. À bientot chez Mr.Coffee</p>
-            <button>FERMER</button>
+            <button id="modal-btn">FERMER</button>
         </div>
     </aside>
-    <div id="modal-bg">
-        <header>
-            <div class="head-div">
-                <img src="./Assets/full_logo_white.png" alt="Mr Coffee cafe logo">
-                <nav>
-                    <a href="./index.html">Accueil</a>
-                    <a href="./about.html">Qui sommes-nous?</a>
-                    <a id="nav-selected">Nous contacter</a>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <div>
-                <img src="./Assets/logo_mrcoffee.png" alt="Mr Coffee cafe logo">
-            </div>
-            <div class="contact-main">
-                <section>
-                    <h2>Ditnes nous tout!</h2>
-                    <form>
-                        <div class="form-section">
-                            <label for="surname">Nom * <span class="form-required"></span></label>
-                            <input type="text" name="surname" id="surname" required>
-                        </div>
-                        <div class="form-section">
-                            <label for="firstname">Prenom * <span class="form-required"></span></label>
-                            <input type="text" name="firstname" id="firstname" required>
-                        </div>
-                        <div class="form-section">
-                            <label for="telephone">Téléphone <span class="form-required"></span></label>
-                            <input type="text" name="telephone" id="telephone">
-                        </div>
-                        <div class="form-section">
-                            <label for="email">Adresse mail * <span class="form-required"></span></label>
-                            <input type="email" name="email" id="email" required>
-                        </div>
-                        <div class="form-section">
-                            <label for="message">Message * <span class="form-required"></span></label>
-                            <textarea id="message" name="message" placeholder="Tapez votre message ici" rows="5" cols="20" required></textarea>
-                        </div>
-                        <input class="form-btn" type="submit" value="ENVOYER">
-                    </form>
-                </section>
-                <section>
-                    <h2>On vous attend!</h2>
-                    <p><b><span>Mr.Coffee</span></b><br>
-                    15 place Jules Guesde<br>
-                    75006 Paris</p>
-                    <p>Tel : +33 9 46 25 78 45<br>
-                    Mail : contact@mr-coffee.com</p>
-                </section>
-                <section>
-                    <img src="Assets/carte_contact.png" alt="Map showing location of Mr Coffee cafe">
-                </section>
-            </div>
-        </main>
-        <footer>
-            <div class="foot-div">
-                <img src="./Assets/logo_blanc.png" alt="Mr Coffee cafe logo">
-                <div>
-                    <h4>Suivez nous sur les réseaux sociaux !</h4>
-                    <div>
-                        <a href="https://www.linkedin.com/"><img src="./Assets/logo_linkedin.png" alt="LinkedIn logo"></a>
-                        <a href="https://twitter.com/"><img src="./Assets/logo_twitter.png" alt="Twitter logo"></a>
-                        <a href="https://www.facebook.com/"><img src="./Assets/logo_facebook.png" alt="Facebook logo"></a>
+    <div id="modal-bg" class="modal-active hidden"></div>
+    <header>
+        <div class="head-div">
+            <img src="./Assets/full_logo_white.png" alt="Mr Coffee cafe logo">
+            <nav>
+                <a href="./index.html">Accueil</a>
+                <a href="./about.html">Qui sommes-nous?</a>
+                <a id="nav-selected">Nous contacter</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div>
+            <img src="./Assets/logo_mrcoffee.png" alt="Mr Coffee cafe logo">
+        </div>
+        <div class="contact-main">
+            <section>
+                <h2>Ditnes nous tout!</h2>
+                <form>
+                    <p>* sont requis</p>
+                    <div class="form-section">
+                        <label for="surname">Nom * <span class="form-required"></span></label>
+                        <input type="text" name="surname" id="surname" required>
                     </div>
+                    <div class="form-section">
+                        <label for="firstname">Prenom * <span class="form-required"></span></label>
+                        <input type="text" name="firstname" id="firstname" required>
+                    </div>
+                    <div class="form-section">
+                        <label for="telephone">Téléphone <span class="form-required"></span></label>
+                        <input type="text" name="telephone" id="telephone">
+                    </div>
+                    <div class="form-section">
+                        <label for="email">Adresse mail * <span class="form-required"></span></label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-section">
+                        <label for="message">Message * <span class="form-required"></span></label>
+                        <textarea id="message" name="message" placeholder="Tapez votre message ici" rows="5" cols="20" required></textarea>
+                    </div>
+                    <input class="form-btn" type="submit" value="ENVOYER">
+                </form>
+            </section>
+            <section>
+                <h2>On vous attend!</h2>
+                <p><b><span>Mr.Coffee</span></b><br>
+                15 place Jules Guesde<br>
+                75006 Paris</p>
+                <p>Tel : +33 9 46 25 78 45<br>
+                Mail : contact@mr-coffee.com</p>
+            </section>
+            <section>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.1245243761623!2d2.3185814154820727!3d48.83676341018361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671b5590a00b1%3A0x2711ee015c1c2b2e!2s15%20Rue%20Jules%20Guesde%2C%2075014%20Paris%2C%20France!5e0!3m2!1sen!2sau!4v1625791769141!5m2!1sen!2sau" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="foot-div">
+            <img src="./Assets/logo_blanc.png" alt="Mr Coffee cafe logo">
+            <div>
+                <h4>Suivez nous sur les réseaux sociaux !</h4>
+                <div>
+                    <a href="https://www.linkedin.com/"><img src="./Assets/logo_linkedin.png" alt="LinkedIn logo"></a>
+                    <a href="https://twitter.com/"><img src="./Assets/logo_twitter.png" alt="Twitter logo"></a>
+                    <a href="https://www.facebook.com/"><img src="./Assets/logo_facebook.png" alt="Facebook logo"></a>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
     <script src="form.js"></script>
 </body>
 </html>
